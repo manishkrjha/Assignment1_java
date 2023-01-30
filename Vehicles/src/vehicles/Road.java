@@ -1,5 +1,6 @@
 package vehicles;
 
+//Defining Road class to test the program
 public class Road {
     public static void main(String[] args){
 //        Creating object for Car class

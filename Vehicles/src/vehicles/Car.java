@@ -1,11 +1,15 @@
 package vehicles;
 
+//Defining Car class that inherits Vehicle class
 public class Car extends Vehicle {
 
+//    Defining personalised attributes for Car
     String bodyType;
     String engineType;
     int numberOfAirbags;
 
+    //    Defining constructor to initialize the attributes
+    //    The super will initialize the parent class
     public Car(String color, String model, int numberOfWheels, String bodyType, String engineType, int numberOfAirbags) {
         super(color, model, numberOfWheels);
         this.bodyType = bodyType;
@@ -13,6 +17,7 @@ public class Car extends Vehicle {
         this.numberOfAirbags = numberOfAirbags;
     }
 
+    //    Method to display the details of the Car
     public void display(){
         System.out.println("Here is your car info: ");
         displayVehicle();

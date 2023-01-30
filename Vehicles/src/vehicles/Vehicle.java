@@ -1,18 +1,23 @@
 package vehicles;
 
+//Creating Vehicle which will act as a parent class
 public class Vehicle {
+
+//    Defining basic attributes of Vehicle
     String color;
     String model;
     String registrationNumber;
     int numberOfWheels;
     int price;
 
+//    Defining constructor to initialize the attributes
     public Vehicle(String color, String model, int numberOfWheels) {
         this.color = color;
         this.model = model;
         this.numberOfWheels = numberOfWheels;
     }
 
+//    Defining setters and getters for the attributes
     public void setRegistrationNumber(String registrationNumber) {
         this.registrationNumber = registrationNumber;
     }
@@ -41,6 +46,7 @@ public class Vehicle {
         return price;
     }
 
+//    Method to display the details of the vehicle
     public void displayVehicle(){
         System.out.println(
                 "Model name: " + model
