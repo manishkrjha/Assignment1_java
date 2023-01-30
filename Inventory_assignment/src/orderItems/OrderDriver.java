@@ -7,10 +7,19 @@ import java.util.*;
 
 public class OrderDriver {
     public static void main(String[] args) {
+
         ArrayList<Inventory> l = new ArrayList<>();
-        for(int i = 0; i < 5; i++) l.add(new Laptop());
-        for(int i = 0; i < 10; i++) l.add(new Accessory());
+
+        for(int i = 0; i < 5; i++) {
+            l.add(new Laptop());
+        }
+
+        for(int i = 0; i < 10; i++) {
+            l.add(new Accessory());
+        }
+
         Scanner sc = new Scanner(System.in);
+
         do {
             System.out.println("Press 1 for ordering laptop, 2 for accessory and 0 for exit:");
             int input = sc.nextInt();
